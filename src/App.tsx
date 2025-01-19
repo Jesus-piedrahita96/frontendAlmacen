@@ -20,7 +20,8 @@ function App() {
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
-        </button>
+        </button>El elemento JSX tiene el tipo "any" implícitamente porque no existe ninguna interfaz "JSX.IntrinsicElements".ts(7026)
+        <button onClick={() => setCount(0)}>quiero colocar en cero el contador</button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
