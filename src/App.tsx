@@ -3,8 +3,17 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+import { useNavigate } from 'react-router'
+
+
 function App() {
   const [count, setCount] = useState(0)
+
+  const navigate = useNavigate()
+
+  const handleLogin = () => {
+    navigate("/login")
+  }
 
   return (
     <>
@@ -29,6 +38,9 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <button onClick={handleLogin}>
+        Login
+      </button>
     </>
   )
 }

@@ -1,0 +1,16 @@
+.container-login {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+}
+.container-login .container-login_section1 {
+  margin: auto;
+  width: 100%;
+}
+.container-login .container-login_section1 .container-login_section1-input {
+  display: grid;
+  grid-template-rows: 1fr 1fr 0.8fr;
+  gap: 16px;
+}
+
+/*# sourceMappingURL=main.css.map */
